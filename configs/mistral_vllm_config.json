@@ -1,0 +1,26 @@
+{
+  "apiVersion": "v1",
+  "env": [
+    {
+      "name": "HF_TOKEN",
+      "value": "<Add your Hugging Face API token here>"  
+    }
+  ],
+  "image": "ghcr.io/mistralai/mistral-src/vllm:latest",
+  "name": "test-vllm",
+  "command": [
+    "/workspace/entrypoint.sh",
+    "--host",
+    "0.0.0.0",
+    "--model",
+    "mistralai/Mistral-7B-Instruct-v0.2"
+  ],
+  "enabled": true,
+  "resources": {
+    "machineType": "A5000",
+    "replicas": 1,
+    "ports": [
+      8000
+    ]
+  }
+}

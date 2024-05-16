@@ -1,0 +1,5 @@
+# common python gitignore files
+
+*.pyc
+env.sh
+*.DS_Store

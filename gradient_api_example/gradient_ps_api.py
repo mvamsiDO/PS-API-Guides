@@ -92,9 +92,9 @@ def disable_deployment(project_id, spec_obj, deployment_id, api_key):
     response = requests.request("POST", url, headers=headers, data=payload)
     return response.text
 
-spec_obj = json.load(open('configs/mistral_vllm_config.json'))
-spec_obj["env"][0]["value"] = hf_token
-print(spec_obj)
-deployment_id = "8b02d762-0aa1-41e3-8b63-717477cf090d"
-result = disable_deployment(project_id, spec_obj, deployment_id, api_key)
-print(result)  
+# spec_obj = json.load(open('configs/mistral_vllm_config.json'))
+# spec_obj["env"][0]["value"] = hf_token
+# print(spec_obj)
+# deployment_id = "8b02d762-0aa1-41e3-8b63-717477cf090d"
+# result = disable_deployment(project_id, spec_obj, deployment_id, api_key)
+# print(result)  

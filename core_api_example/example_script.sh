@@ -1,0 +1,1 @@
+sudo docker run -d --gpus all  -e HF_TOKEN="hf_readtoken" -p 8000:8000     ghcr.io/mistralai/mistral-src/vllm:latest     --host 0.0.0.0     --model mistralai/Mistral-7B-Instruct-v0.2
